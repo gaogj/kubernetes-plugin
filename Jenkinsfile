@@ -1,1 +1,2 @@
+@Library('github')
 javaPipeline('master'){}
