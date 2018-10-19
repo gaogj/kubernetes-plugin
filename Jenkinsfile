@@ -1,2 +1,2 @@
 @Library('github')
-javaPipeline('master'){}
+javaPipeline();
