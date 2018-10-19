@@ -1,1 +1,1 @@
-javaPipeline(){}
+javaPipeline('master'){}
