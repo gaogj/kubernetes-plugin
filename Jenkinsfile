@@ -1,2 +1,2 @@
-@Library('github')
-javaPipeline();
+@Library('github')_
+javaPipeline()
