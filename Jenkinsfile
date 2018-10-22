@@ -38,3 +38,5 @@
                             } else {
                               return ["Unknown state"]
                             }''']]]])])
+
+sh(returnStdout: true, script: 'git branch -r').trim()
