@@ -39,4 +39,5 @@
                               return ["Unknown state"]
                             }''']]]])])
 
-sh(returnStdout: true, script: 'git branch -r').trim()
+def branch = sh(returnStdout: true, script: 'git branch -r').trim()
+println(branch)
