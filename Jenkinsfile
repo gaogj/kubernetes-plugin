@@ -39,6 +39,5 @@
                               return ["Unknown state"]
                             }''']]]])])
 node(){
-    def branch = sh(returnStdout: true, script: 'git branch -r').trim()
-    println(branch)
+    println(scm)
 }
