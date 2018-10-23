@@ -39,11 +39,52 @@
                               return ["Unknown state"]
                             }''']]]])])
 
-echo ${GIT_COMMIT}
-echo ${GIT_BRANCH}
-echo ${GIT_LOCAL_BRANCH}
-echo ${GIT_PREVIOUS_COMMIT }
-echo ${GIT_PREVIOUS_SUCCESSFUL_COMMIT }
-echo ${GIT_URL}
-echo ${GIT_AUTHOR_NAME }
-echo ${GIT_COMMITTER_EMAIL }
+	echo "gitlabBranch: ${env.gitlabBranch}"
+	echo "gitlabActionType: ${env.gitlabActionType}"
+	echo "gitlabUserName: ${env.gitlabUserName}"
+	echo "gitlabUserEmail: ${env.gitlabUserEmail}"
+
+	echo "gitlabSourceBranch: ${env.gitlabSourceBranch}"
+	echo "gitlabSourceRepoHomepage: ${env.gitlabSourceRepoHomepage}"
+	echo "gitlabSourceRepoName: ${env.gitlabSourceRepoName}"
+	echo "gitlabSourceNamespace: ${env.gitlabSourceNamespace}"
+	echo "gitlabSourceRepoURL: ${env.gitlabSourceRepoURL}"
+	echo "gitlabSourceRepoSshUrl: ${env.gitlabSourceRepoSshUrl}"
+	echo "gitlabSourceRepoHttpUrl: ${env.gitlabSourceRepoHttpUrl}"
+
+	echo "gitlabMergeRequestTitle: ${env.gitlabMergeRequestTitle}"
+	echo "gitlabMergeRequestDescription: ${env.gitlabMergeRequestDescription}"
+	echo "gitlabMergeRequestId: ${env.gitlabMergeRequestId}"
+	echo "gitlabMergeRequestIid: ${env.gitlabMergeRequestIid}"
+	echo "gitlabMergeRequestLastCommit: ${env.gitlabMergeRequestLastCommit}"
+
+	echo "gitlabTargetBranch: ${env.gitlabTargetBranch}"
+	echo "gitlabTargetRepoName: ${env.gitlabTargetRepoName}"
+	echo "gitlabTargetNamespace: ${env.gitlabTargetNamespace}"
+	echo "gitlabTargetRepoSshUrl: ${env.gitlabTargetRepoSshUrl}"
+	echo "gitlabTargetRepoHttpUrl: ${env.gitlabTargetRepoHttpUrl}"
+
+	echo "gitlabBefore: ${env.gitlabBefore}"
+	echo "gitlabAfter: ${env.gitlabAfter}"
+	echo "gitlabTriggerPhrase: ${env.gitlabTriggerPhrase}"
+	echo "------------------printPipelineEnv-start--------------"
+
+	echo "BRANCH_NAME:${env.BRANCH_NAME}"
+
+	echo "BUILD_ID:${env.BUILD_ID}"
+	echo "BUILD_NUMBER:${env.BUILD_NUMBER}"
+	echo "BUILD_DISPLAY_NAME:${env.BUILD_DISPLAY_NAME}"
+	echo "BUILD_TAG:${env.BUILD_TAG}"
+	echo "BUILD_URL:${env.BUILD_URL}"
+
+	echo "CHANGE_ID:${env.CHANGE_ID}"
+	echo "CHANGE_TYPE:${env.CHANGE_TYPE}"
+	echo "CHANGE_URL:${env.CHANGE_URL}"
+	echo "CHANGE_TITLE:${env.CHANGE_TITLE}"
+
+	echo "CHANGE_AUTHOR:${env.CHANGE_AUTHOR}"
+	echo "CHANGE_AUTHOR_DISPLAY_NAME:${env.CHANGE_AUTHOR_DISPLAY_NAME}"
+	echo "CHANGE_AUTHOR_EMAIL:${env.CHANGE_AUTHOR_EMAIL}"
+	echo "CHANGE_TARGET:${env.CHANGE_TARGET}"
+
+    echo "USER_ID:${env.USER_ID}"
